@@ -3,12 +3,7 @@ import React from 'react'
 
 function QuizResult({ result, retry, correct }) {
 
-    // useEffect(() => {
-    //     result;
-    // }, []);
-
-
-
+   
 let correcta = correct;
 let totala = result.total;
 

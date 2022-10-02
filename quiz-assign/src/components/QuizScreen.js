@@ -10,7 +10,6 @@ function QuizScreen({ retry }) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [markedAnswers, setMarkedAnswers] = useState(new Array(Data.length));
     const corrected = 0;
-
     const [isQuestionEnd, setisQuestionEnd] = useState(false);
 
     const calculateResult = () => {
@@ -25,16 +24,40 @@ function QuizScreen({ retry }) {
             }
 
         });
-
-        
         return {
 
             total: Data.QuestionList.length,
 
             correct: corrected,
-            
+
         };
     }
+
+    // const calculateResult = () => {
+    //     console.log("into calculate");
+    //     let calcResData = Data.QuestionList;
+    //     // console.log(calcResData[0].correctOptionIndex);
+
+    //     calcResData.forEach((question, i) => {
+    //         // console.log(question.correctOptionIndex==);
+    //         console.log(`ans`);
+    //         console.log(markedAnswers[i]);
+    //         console.log(question.correctOptionIndex == markedAnswers[i]);
+    //         let check = question.correctOptionIndex == markedAnswers[i];
+
+    //         if (check) {
+    //             corrected = corrected + 1;
+    //         }
+
+    //         console.log(`corrected ${corrected}`);
+
+    //     });
+    //     return {
+    //         total: Data.QuestionList.length,
+
+    //         correct: corrected,
+    //     };
+    // };
     return (
         <div className="quiz-screen">
             {

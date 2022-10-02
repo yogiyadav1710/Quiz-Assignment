@@ -13,80 +13,80 @@
     {
       "title": "Which country do cities of Perth, Adelade & Brisbane belong to?",
       "options": [
-        "50",
-        "60",
-        "75",
-        "100"
-      ],
-      "correctOptionIndex": "2"
-    },
-    {
-      "title": "What geometric shape is generally used for stop signs?",
-      "options": [
-        "50",
-        "60",
-        "75",
-        "100"
-      ],
-      "correctOptionIndex": "3"
-    },
-    {
-      "title": "What is cynophobia?",
-      "options": [
-        "50",
-        "60",
-        "75",
-        "100"
+        "France",
+        "Portugal",
+        "Germany",
+        "Australia"
       ],
       "correctOptionIndex": "4"
     },
     {
-      "title": "How many languages are written from right to left?",
+      "title": "What geometric shape is generally used for stop signs?",
       "options": [
-        "50",
-        "60",
-        "75",
-        "100"
+        "Square",
+        "Octagon",
+        "Rectangle",
+        "Triangle"
       ],
       "correctOptionIndex": "2"
     },
     {
+      "title": "What is cynophobia?",
+      "options": [
+        "Fear of spiders",
+        "Fear of darkness",
+        "Fear of dogs",
+        "Fear of heights"
+      ],
+      "correctOptionIndex": "3"
+    },
+    {
+      "title": "How many languages are written from right to left?",
+      "options": [
+        "12",
+        "10",
+        "15",
+        "1"
+      ],
+      "correctOptionIndex": "1"
+    },
+    {
       "title": "Which animal can be seen on the Porsche logo?",
       "options": [
-        "50",
-        "60",
-        "75",
-        "100"
+        "Fox",
+        "Wolf",
+        "Horse",
+        "Bull"
       ],
       "correctOptionIndex": "3"
     },
     {
       "title": "What is the name of the largest ocean on earth?",
       "options": [
-        "50",
-        "60",
-        "75",
-        "100"
+        "Pacific Ocean",
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Artic Ocean"
       ],
-      "correctOptionIndex": "2"
+      "correctOptionIndex": "1"
     },
     {
-      "title": "How long is an Olympic swimming pool (in meters) 8",
+      "title": "What is the rarest M&M color?",
       "options": [
-        "50",
-        "60",
-        "75",
-        "100"
+        "Brown",
+        "Green",
+        "Red",
+        "Blue"
       ],
-      "correctOptionIndex": "2"
+      "correctOptionIndex": "1"
     },
     {
-      "title": "How long is an Olympic swimming pool (in meters) 9",
+      "title": "Which country invented ice cream?",
       "options": [
-        "50",
-        "60",
-        "75",
-        "100"
+        "India",
+        "China",
+        "England",
+        "Brazil"
       ],
       "correctOptionIndex": "2"
     }

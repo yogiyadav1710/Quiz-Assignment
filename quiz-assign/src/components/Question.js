@@ -1,13 +1,23 @@
 import { useState } from 'react';
 import Timer from './Timer'
-// const [timeOut, setTimeOut] = useState(false);
 
-function Question({ question, totalQuestions, currentQuestion, setCurrentQuestionIndex, setisQuestionEnd }) {
+
+function Question({
+    question,
+    totalQuestions,
+    currentQuestion,
+    setCurrentQuestionIndex,
+    setisQuestionEnd,
+    setAnswer
+}) {
     const [selectedOption, setSelectedOption] = useState(null);
-
+    const [timeOut, setTimeOut] = useState(false);
+    const delay = (duration, callback) => {
+        setTimeout(() => {
+            callback();
+        }, duration);
+    };
     const gotoNextQuestion = () => {
-
-
         if (selectedOption) {
             if (currentQuestion === 8) {
                 return setisQuestionEnd(true)
@@ -16,8 +26,20 @@ function Question({ question, totalQuestions, currentQuestion, setCurrentQuestio
                 // console.log(`${currentQuestion}`);
 
             }
+            setSelectedOption(null);
         }
     }
+    // const gotoNextQuestion = () => {
+    //     if (selectedOption) {
+    //         if (currentQuestion === 8) {
+    //             return setisQuestionEnd(true);
+    //         } else {
+    //             console.log(`ans set ${selectedOption}`);
+    //             setAnswer(selectedOption);
+    //             setCurrentQuestionIndex(currentQuestion + 1);
+    //         }
+    //     }
+    // };
 
 
     return (
