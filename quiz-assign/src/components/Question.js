@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import Timer from './Timer'
+// const [timeOut, setTimeOut] = useState(false);
 
 function Question({ question, totalQuestions, currentQuestion, setCurrentQuestionIndex, setisQuestionEnd }) {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -21,7 +22,12 @@ function Question({ question, totalQuestions, currentQuestion, setCurrentQuestio
 
     return (
         <div className="question">
-            <div className="progress-bar" ></div>
+            <div className="timer">
+                <Timer
+                    // setTimeOut={setTimeOut}
+                    questionNumber={currentQuestion}
+                />
+            </div>
             <div className="question-count">
                 <b>{currentQuestion + 1}</b>
                 of

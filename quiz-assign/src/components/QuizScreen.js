@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import QuizResult from './QuizResult.js'
 import Data from "../data/questions.json"
@@ -9,19 +9,19 @@ import Question from "./Question.js"
 function QuizScreen({ retry }) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [markedAnswers, setMarkedAnswers] = useState(new Array(Data.length));
-    const [corrected,setCorrect]=useState(0);
+    const corrected = 0;
 
     const [isQuestionEnd, setisQuestionEnd] = useState(false);
 
     const calculateResult = () => {
-
         console.log("into calculate");
         Data.QuestionList.forEach((question, index) => {
             if (question.correctOptionIndex == markedAnswers[index]) {
                 console.log("into correct marks");
                 // setCount((count)=>count+1);
-                setCorrect((prev)=>prev+1);
-                console.log("correct" + question.correctOptionIndex);
+                // setCorrect(corrected=>corrected+1);
+                // console.log("correct" + question.correctOptionIndex);
+                corrected=corrected+1;
             }
 
         });
@@ -35,8 +35,6 @@ function QuizScreen({ retry }) {
             
         };
     }
-
-
     return (
         <div className="quiz-screen">
             {

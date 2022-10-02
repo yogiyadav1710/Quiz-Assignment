@@ -1,35 +1,34 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 import React from 'react'
 
-function QuizResult({result,retry,correct}) {
-  
+function QuizResult({ result, retry, correct }) {
+
     // useEffect(() => {
     //     result;
-    //   }, []);
+    // }, []);
 
-    // }
-    let  correcta=correct;
-    let  totala=result.total;
 
-    useEffect(() => {
-        
-      }, [result]);
 
-    
+let correcta = correct;
+let totala = result.total;
 
-    return (
-        <div className="result-screen">
-            <h2>Result</h2>
-            {/* <p>Correct Attempted: {correct} </p> */}
-            <p>Correct Attempted: {correct} </p>
+console.log(correcta);
 
-            <p>IncorrectAttempted: {totala-correcta}</p>
-            <p>Total Marks: {result.total}</p>
-            <br />
-           
-            <button onClick={retry}>Retry</button>
-        </div>
-    )
+
+
+return (
+    <div className="result-screen">
+        <h2>Result</h2>
+        {/* <p>Correct Attempted: {correct} </p> */}
+        <p>Correct Attempted: {correct} </p>
+
+        <p>IncorrectAttempted: {totala - correcta}</p>
+        <p>Total Marks: {result.total}</p>
+        <br />
+
+        <button onClick={retry}>Retry</button>
+    </div>
+)
 
 }
 
